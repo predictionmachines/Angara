@@ -106,5 +106,5 @@
   </ItemGroup>
   <PropertyGroup>
     <PreBuildEvent>grunt prepareWeb --no-color</PreBuildEvent>
-  </PropertyGroup>  
+  </PropertyGroup>
 </Project>

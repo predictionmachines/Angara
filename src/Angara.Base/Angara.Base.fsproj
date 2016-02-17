@@ -54,6 +54,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Base.fs" />
     <Content Include="packages.config" />
+    <None Include="Angara.Base.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Angara.Chart">
@@ -71,8 +72,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Angara.Html\Angara.Html.fsproj">
       <Name>Angara.Html</Name>
       <Project>{714b3368-671c-4452-837b-f487a8e027a4}</Project>
