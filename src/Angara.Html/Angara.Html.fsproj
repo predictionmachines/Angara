@@ -69,6 +69,7 @@
     <None Include="Scripts\Record.ts" />
     <None Include="Scripts/Seq.ts" />
     <EmbeddedResource Include="Scripts/index.cshtml" />
+    <None Include="Angara.Html.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Angara.Serialization">
