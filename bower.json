@@ -26,7 +26,8 @@
     "NuGet.Config",
     "package.json",
     "SetVersion.js",
-    "tsd.json"
+    "tsd.json",
+    "publish"
   ],
   "dependencies": {
     "domReady": "^2.0.1",
