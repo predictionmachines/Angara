@@ -1,5 +1,9 @@
 /ext/nuget
-/node_modules
+node_modules
+.tscache
+bower_components
+typings
+dist
 /publish/*
 !/publish/Gruntfile.js
 !/publish/package.json
