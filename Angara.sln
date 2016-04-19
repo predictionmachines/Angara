@@ -28,6 +28,12 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Angara.Html.Tests", "tests\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Angara.Reinstate.Tests", "tests\Angara.Reinstate.Tests\Angara.Reinstate.Tests.fsproj", "{0DD7B730-A949-4744-B2E7-AE97786FFC97}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{009172EE-D6EC-4AEE-8E25-31B26C231A50}"
+	ProjectSection(SolutionItems) = preProject
+		docs\tools\generate.fsx = docs\tools\generate.fsx
+		docs\content\index.fsx = docs\content\index.fsx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
