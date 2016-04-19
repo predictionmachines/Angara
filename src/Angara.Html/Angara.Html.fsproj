@@ -67,7 +67,6 @@
     <EmbeddedResource Include="Scripts/index.cshtml" />
     <EmbeddedResource Include="Scripts/embeddableIndex.cshtml" />
     <None Include="prebuild.cmd" />
-    <None Include="Angara.Html.nuspec" />
     <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>

@@ -60,8 +60,6 @@
     <Compile Include="FolderExportImport.fs" />
     <Compile Include="JsonExporterImporter.fs" />
     <Compile Include="Persistence.fs" />
-    <Content Include="packages.config" />
-    <None Include="Angara.Reinstate.nuspec" />
     <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>

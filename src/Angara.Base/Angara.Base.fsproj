@@ -54,8 +54,6 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Base.fs" />
-    <Content Include="packages.config" />
-    <None Include="Angara.Base.nuspec" />
     <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>
@@ -71,11 +69,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
-    <ProjectReference Include="..\Angara.Html\Angara.Html.fsproj">
-      <Name>Angara.Html</Name>
-      <Project>{714b3368-671c-4452-837b-f487a8e027a4}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\Angara.Reinstate\Angara.Reinstate.fsproj">
       <Name>Angara.Reinstate</Name>
       <Project>{d3c4dedf-431d-4816-b07c-4be07fdd687d}</Project>
