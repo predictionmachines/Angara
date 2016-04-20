@@ -335,7 +335,7 @@ Target "ReleaseDocs" (fun _ ->
 #load "paket-files/build/fsharp/FAKE/modules/Octokit/Octokit.fsx"
 open Octokit
 
-Target "Release" (fun _ ->
+let getGitInfo() = 
     let user =
         match getBuildParam "github-user" with
         | s when not (String.IsNullOrWhiteSpace s) -> s
@@ -349,6 +349,10 @@ Target "Release" (fun _ ->
         |> Seq.filter (fun (s: string) -> s.EndsWith("(push)"))
         |> Seq.tryFind (fun (s: string) -> s.Contains(gitOwner + "/" + gitName))
         |> function None -> gitHome + "/" + gitName | Some (s: string) -> s.Split().[0]
+    user, pw, remote
+
+Target "Release" (fun _ ->
+    let user, pw, remote = getGitInfo()
 
     StageAll ""
     Git.Commit.Commit "" (sprintf "Bump version to %s" release.NugetVersion)
@@ -361,6 +365,37 @@ Target "Release" (fun _ ->
     createClient user pw
     |> createDraft gitOwner gitName release.NugetVersion (release.SemVer.PreRelease <> None) release.Notes
     // TODO: |> uploadFile "PATH_TO_FILE"
+    |> releaseDraft
+    |> Async.RunSynchronously
+)
+
+Target "ReleaseWithBower" (fun _ ->
+    let user, pw, remote = getGitInfo()
+
+    let b = Information.getBranchName ""
+    let br = sprintf "release_%s" release.NugetVersion
+    
+    // Changing versions in bower files
+    let version = sprintf @"""version"": ""%s""" release.NugetVersion
+    [ "bower.json"; "package.json" ]
+    |> Seq.iter (ReplaceInFile (@"""version""\s*:\s*""\d+\.\d+\.\d+""" >=> version))
+
+    StageAll ""
+    Git.Commit.Commit "" (sprintf "Bump version to %s" release.NugetVersion)    
+    Branches.checkoutNewBranch "" b br
+    let ok,_,errors = CommandHelper.runGitCommand "" "add -f dist" 
+    if not ok then failwithf "git add -f dist failed %s" errors
+    Git.Commit.Commit "" (sprintf "Release %s" release.NugetVersion)
+    Branches.tag "" release.NugetVersion
+    Branches.checkoutBranch "" b
+    Branches.deleteBranch "" true br
+    Branches.pushBranch "" remote b
+    Branches.pushTag "" remote release.NugetVersion
+
+    // release on github
+    createClient user pw
+    |> createDraft gitOwner gitName release.NugetVersion (release.SemVer.PreRelease <> None) release.Notes
+    // // TODO: |> uploadFile "PATH_TO_FILE"
     |> releaseDraft
     |> Async.RunSynchronously
 )
@@ -407,5 +442,11 @@ Target "All" DoNothing
 "BuildPackage"
   ==> "PublishNuget"
   ==> "Release"
+  
+"ReleaseDocs"
+  ==> "ReleaseWithBower"  
+  
+"BuildPackage"
+  ==> "ReleaseWithBower"
 
 RunTargetOrDefault "All"

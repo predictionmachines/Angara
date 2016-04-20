@@ -1,4 +1,4 @@
-##### 0.1.6 - Unpublished
+## 0.2.0 - April 19, 2016
 
 * Target framework is .NET 4.5.2
 * Uses Angara.Table 0.2.1, Angara.Chart 0.2.0 and Angara.Serialization 0.2.0
@@ -6,7 +6,7 @@
 Bug fixes:
 * Serialization of a complex structure (e.g. a Table instance) as a record (i.e. using the general object serializer) for HTML caused StackOverflowException.
 
-## 0.1.5 - March 24, 2016
+#### 0.1.5 - March 24, 2016
 
 * Uses recent version of angara.tablejs (v0.1.1).
 
