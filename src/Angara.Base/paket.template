@@ -1,0 +1,23 @@
+type project
+title
+    Angara.Base
+owners
+    Microsoft Research; MSU ITIS Lab
+authors 
+    Microsoft Research; MSU ITIS Lab
+projectUrl
+    http://github.com/predictionmachines/Angara
+iconUrl
+    https://raw.githubusercontent.com/predictionmachines/Angara/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/predictionmachines/Angara/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2016
+tags
+    Angara
+summary
+    Combines base libraries of Angara such as statistics, tables, chart and visualization, configures serialization.
+description
+    Combines base libraries of Angara such as statistics, tables, chart and visualization, configures serialization.

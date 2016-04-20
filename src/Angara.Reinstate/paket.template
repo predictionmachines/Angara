@@ -1,0 +1,23 @@
+type project
+title
+    Angara.Reinstate
+owners
+    Microsoft Research; MSU ITIS Lab
+authors 
+    Microsoft Research; MSU ITIS Lab
+projectUrl
+    http://github.com/predictionmachines/Angara
+iconUrl
+    https://raw.githubusercontent.com/predictionmachines/Angara/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/predictionmachines/Angara/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2016
+tags
+    Angara Reinstate Lazy Deferred Computations
+summary
+    Library that reinstates computation results either from the storage or recomputing a value from the function.
+description
+    Library that reinstates computation results either from the storage or recomputing a value from the function.
