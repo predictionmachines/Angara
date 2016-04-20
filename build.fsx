@@ -447,6 +447,7 @@ Target "All" DoNothing
   ==> "ReleaseWithBower"  
   
 "BuildPackage"
+  ==> "PublishNuget"
   ==> "ReleaseWithBower"
 
 RunTargetOrDefault "All"
