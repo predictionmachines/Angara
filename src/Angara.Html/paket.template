@@ -1,6 +1,6 @@
 type project
 title
-    Angara
+    Angara.Html
 owners
     Microsoft Research; MSU ITIS Lab
 authors 
