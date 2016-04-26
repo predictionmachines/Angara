@@ -1,4 +1,8 @@
-## 0.2.1 - April 20, 2016
+## 0.2.2 - April 26, 2016
+
+* Uses InteractiveDataDisplay v1.2.x with updated UI.
+
+#### 0.2.1 - April 20, 2016
 
 * Target framework is .NET 4.5.2
 * Uses Angara.Table 0.2.1, Angara.Chart 0.2.0 and Angara.Serialization 0.2.0
