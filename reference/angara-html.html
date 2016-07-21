@@ -43,6 +43,25 @@
 </div>
 
 <!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="angara-html-console.html">Console</a>
+          </td>
+          <td class="xmldoc"><p>Allows to display .NET objects using a dynamic html page.</p>
+
+</td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
 
   <h3>Functions and values</h3>
   <table class="table table-bordered member-list">
@@ -61,12 +80,14 @@
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Save.fs#L63-63" class="github-link">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L64-64" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
           <p>Generates an HTML page that displays a value previously stored using
-Angara.ReinstateServices.Reinstate method.</p>
+Angara.ReinstateServices.Reinstate method.
+Parameter <code>path</code> is a path to a folder that was provided to the Reinstate method call.</param>
+The Angara.Html.Serializers must contain a serializer for the given object.</p>
 
 
         </td>
@@ -82,11 +103,16 @@ Angara.ReinstateServices.Reinstate method.</p>
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Save.fs#L69-69" class="github-link">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L70-70" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Generates an HTML string which contains an element having given height (e.g. "1oo%", "200px"),
+which displays the given object.
+All the referenced resources are located at CRNs.
+The Angara.Html.Serializers must contain a serializer for the given object.</p>
+
+
         </td>
       </tr>
       <tr>
@@ -100,11 +126,12 @@ Angara.ReinstateServices.Reinstate method.</p>
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Save.fs#L52-52" class="github-link">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L53-53" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Generates an HTML page that displays the given object.</p>
+          <p>Generates an HTML page that displays the given object.
+The Angara.Html.Serializers must contain a serializer for the given object.</p>
 
 
         </td>
@@ -120,11 +147,11 @@ Angara.ReinstateServices.Reinstate method.</p>
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Save.fs#L42-42" class="github-link">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L43-43" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>The library to be filled dynamically with serializers of types for which there are viewers (e.g. Table, Chart).</p>
+          <p>The library to be filled dynamically with type serializers for which there are viewers (e.g. Table, Chart).</p>
 
 
         </td>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>ReinstateServices - Angara</title>
+    <title>Console - Angara</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content="Microsoft Research; MSU ITIS Lab"/>
@@ -35,35 +35,40 @@
 
 
 
-<h1>ReinstateServices</h1>
+<h1>Console</h1>
 <p>
   <span>Namespace: Angara</span><br />
+  <span>Parent Module: <a href="angara-html.html">Html</a></span>
 </p>
 <div class="xmldoc">
+<p>Allows to display .NET objects using a dynamic html page.</p>
+
 </div>
-  <h3>Static members</h3>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
+      <tr><td>Function or value</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
-            Reinstate(path compute)
+          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
+            Save path
           </code>
-          <div class="tip" id="12">
-            <strong>Signature:</strong> path:string -&gt; (compute:(unit -&gt; &#39;t)) -&gt; &#39;t<br />
-                          <strong>Type parameters:</strong> 't          </div>
+          <div class="tip" id="5">
+            <strong>Signature:</strong> path:string -&gt; unit<br />
+                      </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Reinstate/Persistence.fs#L19-19" class="github-link">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L221-221" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Reinstates a value either from the storage or recomputing a value from the function.
-In the latter case, stores the computed value before returning it to the caller.</p>
+          <p>Save the console content to a file.</p>
 
 
         </td>
@@ -71,39 +76,85 @@ In the latter case, stores the computed value before returning it to the caller.
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
-            Serializers
+          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
+            Write height artefact
           </code>
-          <div class="tip" id="13">
-            <strong>Signature:</strong> ISerializerLibrary<br />
+          <div class="tip" id="6">
+            <strong>Signature:</strong> height:string -&gt; artefact:obj -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Reinstate/Persistence.fs#L13-13" class="github-link">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L218-218" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
-              <p>CompiledName: <code>get_Serializers</code></p>
+          <p>Display the given object on the HTML page in a browser.
+<code>height</code> determines the CSS height for the HTML element (e.g. "1oo%", "200px").</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
-            SnapshotFileName
+          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
+            WriteHtml html
           </code>
-          <div class="tip" id="14">
-            <strong>Signature:</strong> string<br />
+          <div class="tip" id="7">
+            <strong>Signature:</strong> html:string -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Reinstate/Persistence.fs#L11-11" class="github-link">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L214-214" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
-              <p>CompiledName: <code>get_SnapshotFileName</code></p>
+          <p>Display the given html code on the HTML page in a browser.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
+            WriteHtmlWithId id html
+          </code>
+          <div class="tip" id="8">
+            <strong>Signature:</strong> id:string -&gt; html:string -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L210-210" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Display the given html code on the HTML page in a browser;
+if the element with same ID was already displayed, it is updated.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
+            WriteWithId id height artefact
+          </code>
+          <div class="tip" id="9">
+            <strong>Signature:</strong> id:string -&gt; height:string -&gt; artefact:obj -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/predictionmachines/Angara/tree/master/src/Angara.Html/Html.fs#L216-216" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Display the given object on the HTML page in a browser;
+if the object with same ID was already displayed, it is updated.
+<code>height</code> determines the CSS height for the HTML element (e.g. "1oo%", "200px").</p>
+
+
         </td>
       </tr>
     </tbody>
