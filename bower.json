@@ -48,7 +48,7 @@
       "dist/*"
     ],
     "angara.tablejs": [
-      "dist/*"
+      "dist/**/*"
     ],
     "DataTables": [
       "media/css/jquery.dataTables.css",

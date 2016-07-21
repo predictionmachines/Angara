@@ -1,4 +1,9 @@
 ﻿require.config({
+    map: {
+        'angara.tablejs': {
+            'idd': 'idd.umd'
+        }
+    },
     paths: {
         "Angara.Serialization.umd": "angara.serializationjs/dist/Angara.Serialization.umd",
         "Chart": "angara.chartjs/dist/Chart",
@@ -8,7 +13,7 @@
         "jquery.dataTables-css": "DataTables/media/css/jquery.dataTables",
         "chartViewer.umd": "idd/dist/chartViewer.umd",
         "chartViewer-css": "idd/dist/chartViewer",
-        "idd": "idd/dist/idd",
+        "idd.umd": "idd/dist/idd.umd",
         "idd-css": "idd/dist/idd",
         "domReady": "domReady/domReady",
         "jquery": "jquery/dist/jquery.min",
