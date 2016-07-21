@@ -1,4 +1,9 @@
-## 0.2.2 - April 26, 2016
+### 0.2.3 - July 21, 2016
+
+* `Angara.Html.Console` allows to dynamically display objects in a browser.
+* Uses IDD 1.3.
+
+#### 0.2.2 - April 26, 2016
 
 * Uses InteractiveDataDisplay v1.2.x with updated UI.
 

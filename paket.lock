@@ -42,6 +42,31 @@ NUGET
     System.Threading.Thread (4.0) - framework: netstandard15
     System.Threading.ThreadPool (4.0.10) - framework: netstandard15
 
+GROUP Build
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    FAKE (4.33)
+    FSharp.Compiler.Service (2.0.0.6)
+    FSharp.Formatting (2.14.4)
+      FSharp.Compiler.Service (2.0.0.6)
+      FSharpVSPowerTools.Core (>= 2.3 < 2.4)
+    FSharpVSPowerTools.Core (2.3)
+      FSharp.Compiler.Service (>= 2.0.0.3)
+    Microsoft.Bcl (1.1.10) - framework: net10, net11, net20, net30, net35, net40, net40-full
+      Microsoft.Bcl.Build (>= 1.0.14)
+    Microsoft.Bcl.Build (1.0.21) - import_targets: false, framework: net10, net11, net20, net30, net35, net40, net40-full
+    Microsoft.Net.Http (2.2.29) - framework: net10, net11, net20, net30, net35, net40, net40-full
+      Microsoft.Bcl (>= 1.1.10)
+      Microsoft.Bcl.Build (>= 1.0.14)
+    Octokit (0.20)
+      Microsoft.Net.Http
+    SourceLink.Fake (1.1)
+GITHUB
+  remote: fsharp/FAKE
+  specs:
+    modules/Octokit/Octokit.fsx (0cb2c2744556046b56d56f63c709bd540d86540e)
+      Octokit
 GROUP Test
 NUGET
   remote: https://www.nuget.org/api/v2
