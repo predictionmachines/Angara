@@ -1,3 +1,7 @@
+### 0.2.5 - October 19, 2016
+
+* Uses IDD 1.4.3 and Newtonsoft.Json 9.0.1.
+
 ### 0.2.4 - July 21, 2016
 
 * Uses IDD 1.4.
