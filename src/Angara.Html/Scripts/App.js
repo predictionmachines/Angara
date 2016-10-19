@@ -19,7 +19,9 @@
         "jquery": "jquery/dist/jquery.min",
         "jquery-ui": "jquery-ui/jquery-ui.min",
         "css": "require-css/css.min",
-        "rx": "rxjs/dist/rx.lite.min"
+        "rx": "rxjs/dist/rx.lite.min",
+        "svg": "svg.js/dist/svg.min",
+        "filesaver": "FileSaver.js/FileSaver.min"
     }
 });
 

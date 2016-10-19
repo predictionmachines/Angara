@@ -34,9 +34,11 @@
     "angara.serializationjs": "predictionmachines/Angara.Serialization",
     "angara.chartjs": "predictionmachines/Angara.Chart",
     "angara.tablejs": "predictionmachines/Angara.Table",
+    "svg.js": "^2.3.5",
+    "FileSaver.js": "~0.0.2",
     "jquery-ui": "^1.11.4",
     "require-css": "^0.1.8",
-    "idd": "1.4.x",
+    "idd": "^1.4.3",
     "jquery": "^1.12.2",
     "DataTables": "~1.9.4"
   },
@@ -70,9 +72,17 @@
     "require-css": [
       "*.js"
     ],
+    "svg.js": [
+      "dist/*",
+      "*.d.ts"
+    ],
+    "FileSaver.js": [
+      "FileSaver.js",
+      "FileSaver.min.js"
+    ],
     "jquery-ui": [
       "jquery-ui.*js"
-    ],
+    ],    
     "jqueryui": [
       "jquery-ui.*js"
     ],
