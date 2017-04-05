@@ -1,6 +1,7 @@
 ## 0.2.6 - April 6, 2017
 
-* Uses IDD 1.5.1
+* Table Viewer works in embeddable mode.
+* Uses IDD 1.5.1 (IDD is taken from cdnjs).
 
 #### 0.2.5 - October 19, 2016
 
