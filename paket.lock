@@ -1,6 +1,6 @@
 NUGET
   remote: https://www.nuget.org/api/v2
-    Angara.Chart (0.2.2)
+    Angara.Chart (0.2.4)
       Angara.Serialization (>= 0.2 < 0.3)
     Angara.Serialization (0.2.1)
     Angara.Serialization.Json (0.2.1)
@@ -8,7 +8,7 @@ NUGET
       Newtonsoft.Json (>= 9.0.1)
     Angara.Statistics (0.1.4)
       Angara.Serialization
-    Angara.Table (0.2.3)
+    Angara.Table (0.2.4)
       Angara.Serialization (>= 0.2 < 0.3)
       Angara.Statistics (>= 0.1 < 1.0)
       System.Collections.Immutable (1.1.36)
