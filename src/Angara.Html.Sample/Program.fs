@@ -77,6 +77,11 @@ Vestibulum vitae enim sed dui pharetra tristique. Donec maximus elementum maximu
 
     let htmlChart = chart |> Angara.Html.MakeEmbeddable "450px"
     System.IO.File.WriteAllText("emb.html", htmlChart)
+
+    let htmlTable = tableXY |> Angara.Html.MakeEmbeddable "600px"
+    System.IO.File.WriteAllText("emb2.html", htmlTable)
+
+
     printfn "Html is in the emb.html"
 
     0
