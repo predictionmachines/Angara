@@ -5,7 +5,11 @@
         var content_@ViewerId = @Content;
         require.config({
             baseUrl: "@Origin",  
-
+            map: {
+                'angara.tablejs': {
+                    'idd': 'idd.umd'
+                }
+            },
             paths: {
                 "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
                 "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
@@ -13,11 +17,12 @@
                 "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
                 "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "idd.umd": "https://cdnjs.cloudflare.com/ajax/libs/interactive-data-display/1.5.1/idd.umd",
+                "idd-css": "https://cdnjs.cloudflare.com/ajax/libs/interactive-data-display/1.5.1/idd.umd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
+                "jquery-mousewheel": "https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
                 "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
                 "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",

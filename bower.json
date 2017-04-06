@@ -37,8 +37,9 @@
     "svg.js": "^2.3.5",
     "FileSaver.js": "~0.0.2",
     "jquery-ui": "^1.11.4",
+    "jquery-mousewheel": "^3.1.13",
     "require-css": "^0.1.8",
-    "idd": "^1.4.3",
+    "idd": "^1.5.1",
     "jquery": "^1.12.2",
     "DataTables": "~1.9.4"
   },
@@ -67,7 +68,9 @@
       "dist/*"
     ],
     "rxjs": [
-      "dist/rx.lite.js", "dist/rx.lite.min.js", "dist/rx.lite.map"
+      "dist/rx.lite.js",
+      "dist/rx.lite.min.js",
+      "dist/rx.lite.map"
     ],
     "require-css": [
       "*.js"
@@ -82,9 +85,12 @@
     ],
     "jquery-ui": [
       "jquery-ui.*js"
-    ],    
+    ],
     "jqueryui": [
       "jquery-ui.*js"
+    ],
+    "jquery-mousewheel": [
+      "jquery.mousewheel.*js"
     ],
     "modernizr": [
       "modernizr.*js"
@@ -95,6 +101,6 @@
   },
   "resolutions": {
     "jquery": "~2.1.4",
-    "idd": "1.4.x"
+    "idd": "1.5.x"
   }
 }
