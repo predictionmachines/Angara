@@ -3,3 +3,4 @@ Angara.Serialization
 Angara.Statistics
 Angara.Table
 System.Collections.Immutable
+Angara.Chart.CSharp

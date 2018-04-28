@@ -1,4 +1,9 @@
-## 0.2.6 - April 6, 2017
+## 0.3.0 - April 28, 2018
+
+* Uses new versions of `Angara.Chart`, `Angara.Table`, `Angara.Serialization`, `Newtonsoft.Json`
+* Added `Angara.Chart.CSharp` into the mixture
+
+#### 0.2.6 - April 6, 2017
 
 * Table Viewer works in embeddable mode.
 * Uses IDD 1.5.1 (IDD is taken from cdnjs).

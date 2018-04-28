@@ -2,6 +2,8 @@ NUGET
   remote: https://www.nuget.org/api/v2
     Angara.Chart (0.3.1)
       Angara.Serialization (>= 0.3 < 0.4)
+    Angara.Chart.CSharp (0.3.1)
+      Angara.Chart (>= 0.3.1)
     Angara.Serialization (0.3)
     Angara.Serialization.Json (0.3)
       Angara.Serialization (>= 0.3)
