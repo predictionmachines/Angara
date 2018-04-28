@@ -71,7 +71,7 @@ let MakeEmbeddable (height: string) (artefact : obj) =
     let json = Angara.Serialization.Json.FromObject (UIResolver, artefact)
     let content = json.ToString(Newtonsoft.Json.Formatting.Indented)      
     let viewerId = System.Guid.NewGuid().ToString("N")
-    let origin = sprintf "https://cdn.rawgit.com/predictionmachines/Angara/%s/dist" AssemblyVersionInformation.Version;
+    let origin = sprintf "https://cdn.rawgit.com/predictionmachines/Angara/%s/dist" AssemblyVersionInformation.AssemblyVersion;
     applySnippet "embeddableIndex.cshtml" (attributes [ "Content", content; "Origin", origin; "ViewerId", viewerId; "Height", height ])
 
 module Console =
