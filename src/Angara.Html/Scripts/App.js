@@ -8,19 +8,21 @@
         "Angara.Serialization.umd": "angara.serializationjs/dist/Angara.Serialization.umd",
         "Chart": "angara.chartjs/dist/Chart",
         "Table": "angara.tablejs/dist/Table",
+        "TableView": "angara.tablejs/dist/TableView",
         "angara.tablejs": "angara.tablejs/dist/angara.tablejs",
-        "jquery.dataTables": "DataTables/media/js/jquery.dataTables",
-        "jquery.dataTables-css": "DataTables/media/css/jquery.dataTables",
-        "idd.umd": "idd/dist/idd.umd",
-        "idd-css": "idd/dist/idd",
+        "jquery.dataTables": "datatables.net-dt/media/js/jquery.dataTables",
+        "jquery.dataTables-css": "datatables.net-dt/media/css/jquery.dataTables",
+        "idd": "interactive-data-display/dist/idd.umd",
+        "idd.umd": "interactive-data-display/dist/idd.umd",
+        "idd-css": "interactive-data-display/dist/idd.umd",
         "domReady": "domReady/domReady",
         "jquery": "jquery/dist/jquery.min",
-        "jquery-ui": "jquery-ui/jquery-ui.min",
-        "jquery-mousewheel": "jquery-mousewheel/jquery.mousewheel.min",
+        "jquery-ui": "jqueryui/jquery-ui.min",
         "css": "require-css/css.min",
-        "rx": "rxjs/dist/rx.lite.min",
+        "rx": "rx/dist/rx.lite.min",
         "svg": "svg.js/dist/svg.min",
-        "filesaver": "FileSaver.js/FileSaver.min"
+        "filesaver": "file-saver/FileSaver.min",
+        "jquery-mousewheel": "jquery-mousewheel/jquery.mousewheel"
     }
 });
 
