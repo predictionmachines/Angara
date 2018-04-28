@@ -1,4 +1,8 @@
-## 0.3.1 - April 28, 2018
+## 0.3.2 - April 28, 2018
+
+* `Angara.Html.MakeEmbeddable` now uses correct addresses for table and chart external scripts.
+
+#### 0.3.1 - April 28, 2018
 
 * Works `Newtonsoft.Json` 10.0.1 and above
 
