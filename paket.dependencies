@@ -1,3 +1,4 @@
+lowest_matching: true
 source https://nuget.org/api/v2
 nuget Angara.Serialization ~> 0.3.0
 nuget Angara.Serialization.Json ~> 0.3.0

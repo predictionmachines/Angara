@@ -1,4 +1,8 @@
-## 0.3.0 - April 28, 2018
+## 0.3.1 - April 28, 2018
+
+* Works `Newtonsoft.Json` 10.0.1 and above
+
+#### 0.3.0 - April 28, 2018
 
 * Uses new versions of `Angara.Chart`, `Angara.Table`, `Angara.Serialization`, `Newtonsoft.Json`
 * Added `Angara.Chart.CSharp` into the mixture
