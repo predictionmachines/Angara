@@ -5,13 +5,13 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("Angara.Html.Sample")>]
 [<assembly: AssemblyProductAttribute("Angara")>]
 [<assembly: AssemblyDescriptionAttribute("The modelling environment")>]
-[<assembly: AssemblyVersionAttribute("0.3.1")>]
-[<assembly: AssemblyFileVersionAttribute("0.3.1")>]
+[<assembly: AssemblyVersionAttribute("0.3.2")>]
+[<assembly: AssemblyFileVersionAttribute("0.3.2")>]
 do ()
 
 module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyTitle = "Angara.Html.Sample"
     let [<Literal>] AssemblyProduct = "Angara"
     let [<Literal>] AssemblyDescription = "The modelling environment"
-    let [<Literal>] AssemblyVersion = "0.3.1"
-    let [<Literal>] AssemblyFileVersion = "0.3.1"
+    let [<Literal>] AssemblyVersion = "0.3.2"
+    let [<Literal>] AssemblyFileVersion = "0.3.2"
