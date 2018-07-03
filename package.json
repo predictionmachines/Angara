@@ -6,7 +6,7 @@
   "main": "Gruntfile.js",
   "dependencies": {
     "interactive-data-display": "^1.5.4",
-    "jquery": "~3.1.1",
+    "jquery": ">=3.1.1",
     "jquery-ui": "^1.11.4",
     "require-css": "^0.1.10",
     "requirejs": "~2.1.22",
@@ -18,6 +18,9 @@
     "angara.tablejs": "predictionmachines/Angara.Table#0.3.3",
     "angara.serializationjs": "predictionmachines/Angara.Serialization#0.3.0",
     "domReady": "requirejs/domReady#^2.0.1"
+  },
+  "resolutions": {
+    "angara.tablejs/datatables.net-dt/jquery": ">=3.1.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
