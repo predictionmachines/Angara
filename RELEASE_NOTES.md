@@ -1,4 +1,9 @@
-## 0.3.2 - April 28, 2018
+## 0.3.3 - July 3, 2018
+
+* Uses `System.Collections.Immutable` 1.1.36 or later.
+* Uses `DotNetZip` 1.11 or later.
+
+#### 0.3.2 - April 28, 2018
 
 * `Angara.Html.MakeEmbeddable` now uses correct addresses for table and chart external scripts.
 

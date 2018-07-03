@@ -28,7 +28,7 @@ open SourceLink
 
 // The name of the project
 // (used by attributes in AssemblyInfo, name of a NuGet package and directory in 'src')
-let project = "Angara"
+let project = "Itis.Angara"
 
 // Short summary of the project
 // (used as description in AssemblyInfo and as a short summary for NuGet package)
@@ -39,7 +39,7 @@ let summary = "The modelling environment"
 let description = "A cross-platform framework for composing, evaluating, inspecting and persisting computation experiments."
 
 // List of author names (for NuGet package)
-let authors = [ "Microsoft Research; MSU ITIS Lab" ]
+let authors = [ "MSU ITIS Lab" ]
 
 // Tags for your project (for NuGet package)
 let tags = "Modelling Flow"

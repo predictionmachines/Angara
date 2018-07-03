@@ -6,8 +6,8 @@ nuget Angara.Statistics ~> 0.1
 nuget Angara.Table ~> 0.3.3
 nuget Angara.Chart ~> 0.3.1
 nuget Angara.Chart.CSharp ~> 0.3.1
-nuget System.Collections.Immutable 1.1.36
-nuget DotNetZip ~> 1.10.1
+nuget System.Collections.Immutable >= 1.1.36
+nuget DotNetZip ~> 1.11
 nuget Newtonsoft.Json >= 10.0.1
 nuget Suave ~> 1.1.2
 

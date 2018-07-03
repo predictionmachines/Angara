@@ -1,10 +1,12 @@
 type project
 title
-    Angara.Base
+    Itis.Angara.Base
+id
+    Itis.Angara.Base
 owners
-    Microsoft Research; MSU ITIS Lab
+    MSU ITIS Lab
 authors 
-    Microsoft Research; MSU ITIS Lab
+    MSU ITIS Lab
 projectUrl
     http://github.com/predictionmachines/Angara
 iconUrl
@@ -14,7 +16,7 @@ licenseUrl
 requireLicenseAcceptance
     false
 copyright
-    Copyright 2016
+    Copyright 2016 Microsoft, 2018 ITIS MSU Lab
 tags
     Angara
 summary
