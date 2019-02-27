@@ -1,6 +1,7 @@
 ﻿Angara.Serialization
 Angara.Serialization.Json
 Newtonsoft.Json
+FSharp.Core
 
 group Test
 NUnit

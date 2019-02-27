@@ -2,6 +2,7 @@
 Angara.Statistics
 Itis.Angara.Table
 System.Collections.Immutable
+FSharp.Core
 
 group Test
 NUnit

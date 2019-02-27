@@ -4,3 +4,4 @@ Angara.Statistics
 Itis.Angara.Table
 System.Collections.Immutable
 Angara.Chart.CSharp
+FSharp.Core

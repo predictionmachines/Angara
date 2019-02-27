@@ -1,3 +1,8 @@
+## 0.3.4 - February 27, 2019
+
+* Uses `FSharp.Core` 4.2.3 (Assembly version 4.4.1.0) or later.
+* Uses `Suave` 1.1.2 or later.
+
 ## 0.3.3 - July 3, 2018
 
 * Uses `System.Collections.Immutable` 1.1.36 or later.
