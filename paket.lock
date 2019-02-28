@@ -1218,16 +1218,16 @@ NUGET
     Yarnpkg.Yarn (1.10.1)
 GITHUB
   remote: fsharp/FAKE
-    modules/Octokit/Octokit.fsx (917a1c03b20151af3ef897542662fb4267e4f276)
+    modules/Octokit/Octokit.fsx (502d1a20a31bd47ad93643ef618d647e0b1510c6)
       Octokit (>= 0.20)
 GROUP Test
+LOWEST_MATCHING: TRUE
 NUGET
   remote: https://www.nuget.org/api/v2
-    FsCheck (2.13)
-      FSharp.Core (>= 4.0.0.1) - restriction: && (< net452) (>= netstandard1.0) (< netstandard1.6)
-      FSharp.Core (>= 4.2.3) - restriction: || (>= net452) (>= netstandard1.6)
-    FsCheck.NUnit (2.6.3)
-      FsCheck (>= 2.6.3)
+    FsCheck (2.3)
+      FSharp.Core (>= 3.1.2.5)
+    FsCheck.NUnit (2.3)
+      FsCheck (>= 2.3)
       NUnit (>= 2.6.4 < 2.7)
       NUnit.Runners (>= 2.6.4 < 2.7)
     FSharp.Core (4.2.3)
@@ -1666,4 +1666,4 @@ NUGET
       Microsoft.NETCore.Platforms (>= 1.1) - restriction: || (&& (< monoandroid) (< monotouch) (< net451) (>= netstandard1.2) (< win81) (< wpa81) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)) (< portable-net451+win81+wpa81)
       Microsoft.NETCore.Targets (>= 1.1) - restriction: || (&& (< monoandroid) (< monotouch) (< net451) (>= netstandard1.2) (< win81) (< wpa81) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)) (< portable-net451+win81+wpa81)
       System.Runtime (>= 4.3) - restriction: || (&& (< monoandroid) (< monotouch) (< net451) (>= netstandard1.2) (< win81) (< wpa81) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)) (< portable-net451+win81+wpa81)
-    Unquote (3.1.2)
+    Unquote (3.1.1)

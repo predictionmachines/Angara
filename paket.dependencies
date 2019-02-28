@@ -10,7 +10,7 @@ nuget System.Collections.Immutable >= 1.1.36
 nuget DotNetZip ~> 1.11
 nuget Newtonsoft.Json >= 10.0.1
 nuget Suave >= 1.1.2
-nuget FSharp.Core 4.2.3.0
+nuget FSharp.Core >= 4.2.3.0
 
 group Build
   source https://nuget.org/api/v2
@@ -23,9 +23,10 @@ group Build
   github fsharp/FAKE modules/Octokit/Octokit.fsx
 
 group Test
+  lowest_matching: true
   source https://nuget.org/api/v2
   
-  nuget FSharp.Core 4.2.3.0
+  nuget FSharp.Core >= 4.2.3.0
   nuget NUnit 2.6.4
   nuget NUnit.Runners  2.6.4
   nuget FsCheck ~> 2.3
